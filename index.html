@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Brick Breaker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="ui-layer">
+            <div id="score-board">Score: <span id="score">0</span> | Level: <span id="level">1</span></div>
+            <div id="start-screen" class="active">
+                <h1>NEON BREAKOUT</h1>
+                <p>Click to Start</p>
+                <button id="start-btn">PLAY</button>
+            </div>
+            <div id="game-over-screen" class="hidden">
+                <h1>GAME OVER</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">RETRY</button>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
