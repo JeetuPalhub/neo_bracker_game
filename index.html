@@ -12,16 +12,23 @@
 <body>
     <div id="game-container">
         <div id="ui-layer">
-            <div id="score-board">Score: <span id="score">0</span> | Level: <span id="level">1</span></div>
+            <div id="score-board">
+                <div class="stat-item"><span class="stat-label">Score:</span> <span id="score" class="stat-value">0</span></div>
+                <div class="stat-item"><span class="stat-label">Level:</span> <span id="level" class="stat-value">1</span></div>
+                <div class="stat-item"><span class="stat-label">Lives:</span> <span id="lives" class="stat-value">3</span></div>
+                <div class="stat-item" id="high-score-container"><span class="stat-label">High:</span> <span id="high-score" class="stat-value">0</span></div>
+            </div>
+            
             <div id="start-screen" class="active">
                 <h1>NEON BREAKOUT</h1>
-                <p>Click to Start</p>
-                <button id="start-btn">PLAY</button>
+                <p>Master the bounce. Break the grid.<br>Move with Mouse or Arrow Keys.</p>
+                <button id="start-btn">INITIALIZE</button>
             </div>
+
             <div id="game-over-screen" class="hidden">
-                <h1>GAME OVER fuck you</h1>
-                <p>Final Score: <span id="final-score">0</span></p>
-                <button id="restart-btn">RETRY</button>
+                <h1>GAME OVER</h1>
+                <p>Mission failed. You reached Level <span id="final-level">1</span>.<br>Final Score: <span id="final-score">0</span></p>
+                <button id="restart-btn">REBOOT</button>
             </div>
         </div>
         <canvas id="gameCanvas"></canvas>
